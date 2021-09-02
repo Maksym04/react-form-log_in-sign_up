@@ -1,0 +1,78 @@
+@import './../../common/styles/_templates';
+@import './../../common/styles/_vars';
+
+.loginFormContainer
+    @extend %common-container
+    justify-content: center
+    flex-direction: column
+    flex-wrap: nowrap
+    max-width: 1600px
+    width: 100%
+    min-width: 320px
+
+.rememberForgotBlock
+    @extend %common-container
+    justify-content: space-between
+    flex-direction: row
+    flex-wrap: nowrap
+    width: 45%
+    margin-top: 13px
+
+.rememberBlock,
+.forgotBlock
+    @extend %common-container
+    flex-wrap: wrap
+    width: 50%
+    text-align: center
+    color: $textColor
+    font-size: 15px
+
+.rememberBlock
+    justify-content: flex-start
+    margin-left: 10px
+    margin-right: 5px
+
+.forgotBlock
+    justify-content: flex-end
+    text-decoration: none
+    margin-left: 5px
+
+.buttonLoginContainer
+    @extend %common-container
+    justify-content: center
+    flex-direction: column
+    flex-wrap: nowrap
+    width: 45%
+
+.loginButton1,
+.loginButton2
+    width: 100%
+    
+
+.loginButton1
+    height: 75px
+    font-size: 20px
+    font-weight: bold
+    background: #28d2d0
+    border-color: #28d2d0
+    color: $textColor
+    margin-top: 30px
+    margin-bottom: 15px
+
+.loginButton2
+    height: 50px
+    @extend %common-container
+    justify-content: center
+    background: #dd4b39
+    border-color: #dd4b39
+    
+
+.button2Text
+    margin-left: 5px
+
+.button2Link
+    text-decoration: none
+    color: $textColor
+    font-size: 16px
+
+

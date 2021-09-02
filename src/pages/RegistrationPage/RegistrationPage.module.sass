@@ -1,0 +1,41 @@
+@import './../../common/styles/_templates';
+@import './../../common/styles/_vars';
+    
+.headerContainer
+    @extend %common-container
+    justify-content: space-around
+    max-width: 1600px
+    width: 100%
+    min-width: 320px
+    height: 100px
+    padding-top: 10px
+    background: $backgroundColor
+
+.headerText
+    @extend %common-container
+    justify-content: center
+    width: 100px
+    height: 45px
+    text-decoration: none
+    color: $textColor
+    font-size: 23px
+    font-weight: bold
+    border: 1px solid $textColor
+
+.pageBox
+    margin-right: 20px
+    margin-bottom: 5px
+
+.pagesBox
+    @extend %common-container
+    justify-content: center
+    flex-wrap: wrap
+    width: 35%
+    margin-right: 25px
+    margin-left: 30px
+
+.logoBox
+    @extend %common-container
+    justify-content: center
+    width: 15%
+    margin-left: 25px

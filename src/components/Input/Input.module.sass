@@ -1,0 +1,38 @@
+@import './../../common/styles/_templates';
+@import './../../common/styles/_vars';
+    
+.inputBox
+    @extend %common-container
+    justify-content: center
+    flex-direction: column
+    flex-wrap: nowrap
+    width: 45%
+    margin-bottom: 20px
+    position: relative
+    
+.input
+    width: 100%
+    height: 70px
+    border-color: $textColor
+    margin-bottom: 5px
+
+.invalidInput
+    border: 2px solid #FF0000
+
+.errorMessage
+    // @extend %common-container
+    // justify-content: center
+    // width: 100%
+    // text-align: center
+    // border: 0.7px solid #FF0000
+    // color: $textColor
+    width: 100%
+    color: $textColor
+    font-size: 13px
+    margin: 1px 0
+    border: 0.7px solid #FF0000
+    text-align: center
+    padding: 1px 0
+    position: absolute
+    top: 100%
+    left: 0%
