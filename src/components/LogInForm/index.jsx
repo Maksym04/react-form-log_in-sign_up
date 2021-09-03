@@ -10,6 +10,7 @@ function LogInForm () {
   const loginFormInitialValues = {
     email: '',
     password: '',
+    toogle: false,
   };
 
   const loginFormHandleSubmit = (values, formikBag) => {
@@ -34,8 +35,7 @@ function LogInForm () {
             <Input type='password' name='password' placeholder='Password' />
             <div className={styles.rememberForgotBlock}>
               <label className={styles.rememberBlock}>
-                <Field type='checkbox' name='toogle' />
-                Remember Me
+                <Field type='checkbox' name='toogle' /> Remember Me
               </label>
               <a
                 className={styles.forgotBlock}

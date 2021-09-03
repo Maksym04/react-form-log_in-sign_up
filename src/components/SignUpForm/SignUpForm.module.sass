@@ -1,0 +1,120 @@
+@import './../../common/styles/_templates';
+@import './../../common/styles/_vars';
+
+.signupFormContainer
+    @extend %common-container
+    justify-content: center
+    flex-direction: column
+    flex-wrap: nowrap
+    max-width: 1600px
+    width: 100%
+    min-width: 320px
+
+.signupBox
+    @extend %common-container
+    justify-content: center
+    flex-direction: column
+    flex-wrap: nowrap
+    width: 100%
+    min-width: 320px
+
+.signupBlock
+    @extend %common-container
+    justify-content: space-between
+    flex-direction: row
+    flex-wrap: wrap
+    width: 50%
+
+@media screen and (max-width: 576px)
+    .signupBlock
+        flex-direction: column
+        width: 100%
+
+.joinBuyerBox,
+.joinCreativeBox
+    @extend %common-container
+    justify-content: space-between
+    flex-direction: row
+    width: 50%
+    min-width: 320px
+    height: 80px
+    color: $textColor
+    border: 1.5px solid $textColor
+    padding-bottom: 10px
+
+.joinBuyerBox
+    margin-top: 55px
+
+.joinBuyerBox:hover
+    cursor: pointer
+
+.joinCreativeBox
+    margin-top: 35px
+
+.joinCreativeBox:hover
+    cursor: pointer
+
+.picked
+    margin-left: 15px
+    margin-right: 15px
+
+.pickedBox
+    width: 90%
+
+.pickedBoxTextHeader
+    font-size: 20px
+    padding-top: 10px
+    padding-bottom: 10px
+    font-weight: bold
+
+.pickedBoxText
+    font-size: 14px
+
+.label
+   width: 50%
+   text-align: center
+   font-size: 16px
+   color: $textColor
+   margin-top: 20px
+   margin-bottom: 25px
+
+.label:hover
+    cursor: pointer
+
+.signupButton1,
+.signupButton2,
+.textBetweenButton
+    width: 50%
+
+.signupButton1
+    height: 70px
+    font-size: 17px
+    font-weight: bold
+    background: #28d2d0
+    border-color: #28d2d0
+    color: $textColor
+    margin-top: 30px
+    margin-bottom: 18px
+
+.textBetweenButton
+    font-size: 17px
+    text-align: center
+    color: $textColor
+    font-weight: bold
+    margin-bottom: 18px
+    & > .linkTextBetweenButton
+        color: $textColor
+        font-weight: bold
+        
+.signupButton2
+    @extend %common-container
+    justify-content: center
+    background: #dd4b39
+    border-color: #dd4b39
+    margin-bottom: 150px
+    height: 50px
+    & > .signupButton2Text
+        text-decoration: none
+        color: $textColor
+        font-size: 15px
+        margin-left: 5px

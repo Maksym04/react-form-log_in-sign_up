@@ -15,7 +15,7 @@
     justify-content: space-between
     flex-direction: row
     flex-wrap: nowrap
-    width: 45%
+    width: 50%
     margin-top: 13px
 
 .rememberBlock,
@@ -32,6 +32,9 @@
     margin-left: 10px
     margin-right: 5px
 
+.rememberBlock:hover
+    cursor: pointer
+
 .forgotBlock
     justify-content: flex-end
     text-decoration: none
@@ -42,7 +45,8 @@
     justify-content: center
     flex-direction: column
     flex-wrap: nowrap
-    width: 45%
+    width: 50%
+    
 
 .loginButton1,
 .loginButton2
@@ -60,19 +64,15 @@
     margin-bottom: 15px
 
 .loginButton2
-    height: 50px
     @extend %common-container
     justify-content: center
     background: #dd4b39
     border-color: #dd4b39
-    
-
-.button2Text
-    margin-left: 5px
-
-.button2Link
-    text-decoration: none
-    color: $textColor
-    font-size: 16px
-
-
+    margin-bottom: 40px
+    height: 50px
+    & > .button2Text
+        margin-left: 5px
+        .button2Link
+            text-decoration: none
+            color: $textColor
+            font-size: 16px
